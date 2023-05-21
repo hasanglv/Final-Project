@@ -22,6 +22,28 @@
     font-style: normal;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #181e4b;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(223, 105, 81);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(241, 165, 1);
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -125,7 +147,6 @@ nav {
     transform: translateX(-50%);
     z-index: 1;
 }
-
 
 .dropdown li a {
     color: #fff;
@@ -599,7 +620,6 @@ nav {
     transition: all 0.5s ease;
 }
 
-
 .menu_up {
     font-family: "Poppins";
     font-style: normal;
@@ -654,3 +674,205 @@ nav {
     border-radius: 30px;
     width: 73px;
 }
+
+.testimonials {
+    margin-bottom: 173px;
+}
+
+.testimonials_wrapper {
+    margin-left: 186px;
+    display: flex;
+}
+
+.testimonials_left {
+    margin-top: 9px;
+    position: relative;
+}
+
+.testimonials_up {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #5e6282;
+}
+
+.testimonials_title {
+    margin-top: 8px;
+    font-family: "Volkhov";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+    text-transform: capitalize;
+    color: #14183e;
+    max-width: 409px;
+}
+
+.swiper {
+    width: 504px;
+    height: 245px;
+}
+
+.swiper-slide {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 28px 34px 34px;
+    position: relative;
+}
+
+.swiper-slide {
+    border: 2px solid #f7f7f7;
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852))
+        drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01))
+        drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+}
+
+.swiper-slide-active {
+    filter: unset;
+    border: none;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+        0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+
+.card_text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #5e6282;
+    max-width: 402px;
+}
+
+.card_name {
+    margin-top: 34px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #5e6282;
+}
+
+.card_city {
+    margin-top: 5px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #5e6282;
+}
+
+.swiper-slide::before {
+    content: "";
+    position: absolute;
+    top: -34px;
+    left: -37px;
+    width: 68px;
+    height: 68px;
+    z-index: 2;
+    background: url("../img/man.png") no-repeat center / cover;
+}
+
+.swiper-creative .swiper-slide {
+    overflow: unset;
+}
+
+.swiper,
+swiper-container {
+    overflow: unset;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    left: unset;
+    right: -114px;
+    width: 14px;
+    height: 7px;
+    color: #3e2e4d;
+}
+
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 1;
+    color: #bcb7c2;
+}
+
+.swiper-button-prev {
+    top: 40%;
+    transform: translateY(-80%) rotate(90deg);
+}
+
+.swiper-button-next {
+    top: 60%;
+    transform: translateY(60%) rotate(90deg);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 14px;
+}
+
+.swiper-pagination {
+    margin-top: 75px;
+    position: static;
+    width: 87px;
+    height: 12px;
+    text-align: left;
+}
+
+.swiper-pagination-bullet {
+    background: #e5e5e5;
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #39425d;
+}
+
+.company_wrapper {
+    margin: 0 185px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company_img {
+    position: relative;
+}
+
+.company_img::after {
+    content: "";
+    position: absolute;
+    width: 241px;
+    height: 86px;
+    background: #ffffff;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+        0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 10px;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.company_img:hover::after {
+    opacity: 1;
+}
+
+.company_img img {
+    transition: all 0.5s;
+}
+
+.company_img:hover img {
+    filter: grayscale(100%);
+}
+
