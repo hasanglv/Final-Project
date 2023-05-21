@@ -269,7 +269,7 @@ nav {
     right: 58px;
 }
 
-.services_up {
+.up-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -279,7 +279,7 @@ nav {
     color: #5e6282;
 }
 
-.services_title {
+.title-text {
     font-family: "Volkhov";
     font-style: normal;
     font-weight: 700;
@@ -331,7 +331,6 @@ nav {
     z-index: -1;
 }
 
-
 .services_name {
     margin-top: 29px;
     font-family: "Open Sans";
@@ -353,4 +352,74 @@ nav {
     text-align: center;
     color: #5e6282;
     position: relative;
+}
+
+.top {
+    margin-top: 156px;
+    margin-bottom: 186px;
+}
+
+.top_wrapper {
+    margin: 60px 227px 0 173px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_item {
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852))
+        drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01))
+        drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+    border-radius: 24px;
+    position: relative;
+}
+
+.top_item:last-child::after {
+    content: "";
+    position: absolute;
+    bottom: 47px;
+    right: -62px;
+    width: 96px;
+    height: 252px;
+    z-index: -1;
+    background: url("../img/Decore2.svg") no-repeat center / cover;
+}
+
+.tob_bot {
+    background: #ffffff;
+    border-radius: 0px 0px 24px 24px;
+    margin-top: -130px;
+    position: relative;
+    z-index: 1;
+    padding: 27px 25px 42px 20px;
+}
+
+.top_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-city,
+.info-price {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 124.5%;
+    color: #5e6282;
+}
+
+.top_descr {
+    margin-top: 19px;
+    display: flex;
+    gap: 14px;
+}
+
+.top_descr p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 124.5%;
+    color: #5e6282;
 }
