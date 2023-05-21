@@ -31,7 +31,7 @@
 
 .container {
     margin: 0 auto;
-    width: 1440px;
+    max-width: 1440px;
 }
 
 header {
@@ -40,6 +40,7 @@ header {
     background-position: top -150px left 0;
     background-size: cover;
     padding-top: 47px;
+    padding-bottom: 117px;
 }
 
 header > .container {
@@ -72,6 +73,7 @@ nav {
     border: 1px solid #212832;
     border-radius: 5px;
     padding: 9px 21px 9px 22px !important;
+    cursor: pointer;
 }
 
 .nav_list li a {
@@ -212,6 +214,7 @@ nav {
     text-align: center;
     color: #ffffff;
     padding: 18px 26px;
+    cursor: pointer;
 }
 
 .main_demo {
@@ -230,6 +233,7 @@ nav {
     background-image: url("../img/play.svg");
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .play-text {
@@ -245,4 +249,108 @@ nav {
     position: absolute;
     top: 58px;
     right: 93px;
+}
+
+.services {
+    margin-top: 105px;
+}
+
+.services > .container {
+    position: relative;
+}
+
+.services > .container::after {
+    content: "";
+    position: absolute;
+    width: 153px;
+    height: 166px;
+    background: url("../img/plus.svg") no-repeat center / cover;
+    top: 0;
+    right: 58px;
+}
+
+.services_up {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #5e6282;
+}
+
+.services_title {
+    font-family: "Volkhov";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #14183e;
+}
+
+.services_wrapper {
+    margin: 68px 197px 33px 154px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services_img {
+    height: 86px;
+}
+
+.services_item {
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 190px;
+}
+
+.services_item:nth-child(2) {
+    padding: 0 43px 45px;
+    position: relative;
+    border-radius: 36px;
+    background: #ffffff;
+    max-width: 267px;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+        0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+
+.services_item:nth-child(2)::after {
+    content: "";
+    transition: all 0.3s ease;
+    position: absolute;
+    background: #df6951;
+    border-radius: 30px 0px 10px;
+    width: 100px;
+    height: 100px;
+    bottom: -35px;
+    left: -33px;
+    z-index: -1;
+}
+
+
+.services_name {
+    margin-top: 29px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #1e1d4c;
+}
+
+.services_descr {
+    margin-top: 15px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #5e6282;
+    position: relative;
 }
