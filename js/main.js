@@ -45,3 +45,13 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+window.addEventListener("resize", function () {
+    var screenWidth = window.innerWidth;
+    if (screenWidth < 576) {
+        swiper.params.creativeEffect.next.translate = [0, 95, -100];
+    } else {
+        swiper.params.creativeEffect.next.translate = [55, 95, -100];
+    }
+    swiper.update();
+});

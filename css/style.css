@@ -1112,3 +1112,163 @@ footer {
     line-height: 124.5%;
     color: #5e6282;
 }
+
+@media (max-width: 1400px) {
+    .top_wrapper {
+        margin: 60px 90px 90px;
+    }
+    .book_wrapper {
+        margin: 0 124px 0 124px;
+    }
+    .services_wrapper {
+        margin: 68px 80px 33px 80px;
+    }
+    .header_img img {
+        object-fit: cover;
+        width: 100%;
+    }
+    .header_img {
+        width: 564px;
+        top: 129px;
+        right: 36px;
+    }
+    nav {
+        padding: 0 88px;
+    }
+    .testimonials_wrapper {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    nav {
+        padding: 0 15px;
+    }
+    .main {
+        margin-left: 20px;
+    }
+    .top_wrapper {
+        flex-wrap: wrap;
+    }
+    .testimonials_wrapper {
+        flex-wrap: wrap;
+    }
+    .testimonials_left {
+        margin-left: 100px;
+    }
+    .company_wrapper {
+        margin: 0 20px;
+    }
+    .company_img::after {
+        width: 114px;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav_list {
+        gap: 20px;
+    }
+    .header_img {
+        display: none;
+    }
+    .services_wrapper {
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    .book_wrapper {
+        flex-wrap: wrap;
+    }
+    .company_img::after {
+        content: none;
+    }
+    .subscribe_wrapper {
+        padding: 79px 25px 78px;
+    }
+    .footer_wrapper {
+        flex-wrap: wrap;
+    }
+    .nav_btn {
+        margin-left: 25px;
+        margin-right: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav_list > li{
+        display: none;
+    }
+    .main_title span::after {
+        width: 223px;
+        left: -11px;
+    }
+    .swiper {
+        width: 372px;
+        height: 280px;
+    }
+    .swiper-pagination {
+        margin-bottom: 100px;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        right: -40px;
+    }
+    .company_wrapper {
+        flex-wrap: wrap;
+    }
+    .subscribe_wrapper {
+        margin: 0 40px 0;
+    }
+    .subscribe_send input {
+        width: 221px;
+    }
+    .sub_plus {
+        display: none;
+    }
+    .trip_menu {
+        right: -72px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav_list {
+        display: none;
+    }
+    .top_wrapper {
+        margin: 0 ;
+        justify-content: center;
+    }
+    .top_item:last-child::after {
+        content: none;
+    }
+    .book_wrapper {
+        margin: 0;
+    }
+    .trip_menu {
+        right: 0;
+    }
+    .book_right::after {
+        right: 0;
+    }
+    .testimonials_left {
+        margin-left: 0;
+    }
+    .swiper {
+        width: 302px;
+        height: 319px;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        right: 0;
+    }
+    .subscribe_send {
+        flex-wrap: wrap;
+    }
+    .footer_list {
+        flex-wrap: wrap;
+    }
+    .decor1, .decor2 {
+        width: 100%;
+    }
+    .decor1 img, .decor2 img {
+        object-fit: cover;
+        width: 100%;
+    }
+}
