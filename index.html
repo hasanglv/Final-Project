@@ -13,9 +13,19 @@
         <header>
             <div class="container">
                 <nav>
-                    <a href="#" class="nav_logo">
+                    <a href="#" class="nav_logo standart">
                         <img src="img/Logo.svg" alt="Logo" />
                     </a>
+                    <div class="adaptive_logo">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <a href="#" class="nav_logo">
+                            <img src="img/Logo.svg" alt="Logo" />
+                        </a>
+                    </div>
                     <ul class="nav_list">
                         <li><a href="#">Desitnations</a></li>
                         <li><a href="#">Hotels</a></li>
@@ -32,6 +42,17 @@
                                 </ul>
                             </li>
                         </ul>
+                    </ul>
+                    <ul class="nav_set phone">
+                        <li><a href="#">Login</a></li>
+                        <li class="nav_btn"><a href="#">Sign up</a></li>
+                        <li class="nav_lang" onmouseover="openDropdown()">
+                            <a href="#">EN</a>
+                            <ul class="dropdown" onmouseout="closeDropdown()">
+                                <li><a href="#">RU</a></li>
+                                <li><a href="#">AZ</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <div class="main">
@@ -233,11 +254,11 @@
         <section class="company">
             <div class="container">
                 <div class="company_wrapper">
-                    <div class="company_img"><img src="img/com1.png" alt="company" /></div>
-                    <div class="company_img"><img src="img/com2.png" alt="company" /></div>
-                    <div class="company_img"><img src="img/com3.png" alt="company" /></div>
-                    <div class="company_img"><img src="img/com4.png" alt="company" /></div>
-                    <div class="company_img"><img src="img/com5.png" alt="company" /></div>
+                    <div class="company_img wow fadeLeft"><img src="img/axon.png" alt="company" /></div>
+                    <div class="company_img"><img src="img/jetstar.png" alt="company" /></div>
+                    <div class="company_img"><img src="img/expedia.png" alt="company" /></div>
+                    <div class="company_img"><img src="img/qantas.png" alt="company" /></div>
+                    <div class="company_img"><img src="img/litalia.png" alt="company" /></div>
                 </div>
             </div>
         </section>
@@ -293,9 +314,9 @@
                     </div>
                     <div class="footer_social">
                         <div class="icons_wrap">
-                            <div class="social_icon"><img src="img/Facebook Icon.svg" alt="Facebook"></div>
-                            <div class="social_icon"><img src="img/inst.svg" alt="inst"></div>
-                            <div class="social_icon"><img src="img/twitter.svg" alt="twitter"></div>
+                            <div class="social_icon"><img src="img/Facebook Icon.svg" alt="Facebook" /></div>
+                            <div class="social_icon"><img src="img/inst.svg" alt="inst" /></div>
+                            <div class="social_icon"><img src="img/twitter.svg" alt="twitter" /></div>
                         </div>
                         <div class="icon_text">Discover our app</div>
                         <div class="store_wrap">

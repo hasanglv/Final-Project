@@ -24,6 +24,7 @@ function closeDropdown() {
 var swiper = new Swiper(".mySwiper", {
     grabCursor: true,
     effect: "creative",
+    direction: "vertical",
     creativeEffect: {
         prev: {
             shadow: true,
@@ -54,4 +55,20 @@ window.addEventListener("resize", function () {
         swiper.params.creativeEffect.next.translate = [55, 95, -100];
     }
     swiper.update();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    var hamburger = document.querySelector(".hamburger");
+    var navList = document.querySelector(".nav_list");
+
+    hamburger.addEventListener("click", function () {
+        navList.classList.toggle("active");
+    });
+
+    document.addEventListener("click", function (event) {
+        var targetElement = event.target;
+        if (!targetElement.closest(".hamburger") && !targetElement.closest(".nav_list")) {
+            navList.classList.remove("active");
+        }
+    });
 });
